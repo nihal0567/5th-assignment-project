@@ -20,31 +20,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- header section -->
     <header>
       <nav
-        class="nav flex justify-between items-center mt-1 mb-4 m-2 lg:mx-8"
+        class="nav flex justify-between items-center mb-4 sm:m-2 m-2 md:mx-8"
         id="nav"
       >
-        <div class="nav-left flex items-center justify-between gap-2">
-          <img class="w-11"  src="assets/logo.png" alt="" />
-          <h1 class="w-[135px] h-[45px] text-[#006747] font-bold">
+        <div class="nav-left flex items-center cursor-pointer justify-between gap-2">
+          <img class="w-11" src="assets/logo.png" alt="" />
+          <h1 class="text-[#006747] font-bold">
             Emergency <br />
             Service
           </h1>
         </div>
-        <div class="nav-right p-8">
-          <button class="btn rounded-[50px] font-bold bg-[#edfff1]">
+        <div class="nav-right lg:p-8 md:p-1 grid lg:grid-cols-3 sm:grid-cols-3">
+          <button class="btn  rounded-[50px] font-bold hover:bg-gray-300 bg-[#edfff1]">
             0 <img class="w-7" src="assets/heart.png" />
           </button>
-          <button class="btn rounded-[50px] font-bold bg-[#edfff1]">
+          <button class="btn rounded-[50px] font-bold hover:bg-gray-300 bg-[#edfff1]">
             100 <img class="w-7" src="assets/coin.png" />
           </button>
           <button
-            class="btn rounded-[50px] font-bold text-white px-5 bg-[#00A63E] font-semibold"
+            class="btn rounded-[50px] font-bold text-white px-5 bg-[#00A63E] hover:bg-[#acbeb3] font-semibold"
           >
             2 copy
           </button>
@@ -79,10 +78,10 @@
             <div class="card bg-base-100 shadow-sm">
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
-                  <span class="bg-[#FFE3E2] rounded-2xl"
+                  <span class="bg-[#FFE3E2] cursor-pointer rounded-2xl"
                     ><img class="w-8 m-4" src="assets/emergency.png" alt=""
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl cursor-pointer">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">
@@ -110,9 +109,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/police.png" alt=""
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/police.png" alt=""
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl cursor-pointer">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">পুলিশ</h2>
@@ -138,9 +137,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/fire-service.png"
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/fire-service.png"
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl cursor-pointer">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">ফায়ার সার্ভিস</h2>
@@ -166,9 +165,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/ambulance.png" alt=""
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/ambulance.png" alt=""
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl cursor-pointer">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">
@@ -196,9 +195,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/emergency.png" alt=""
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/emergency.png" alt=""
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl cursor-pointer">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">নারী ও শিশু সহায়তা</h2>
@@ -224,9 +223,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/emergency.png"
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/emergency.png"
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl cursor-pointer">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">দুদক</h2>
@@ -252,9 +251,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/emergency.png" alt=""
+                    ><img class="w-8 m-4  cursor-pointer" src="assets/emergency.png" alt=""
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">
@@ -282,9 +281,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/emergency.png" alt=""
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/emergency.png" alt=""
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">ব্র্যাক</h2>
@@ -310,9 +309,9 @@
               <div class="card-body p-8 bg-white rounded-xl">
                 <div class="flex justify-between items-center py-4">
                   <span class="bg-[#FFE3E2] rounded-2xl"
-                    ><img class="w-8 m-4" src="assets/emergency.png"
+                    ><img class="w-8 m-4 cursor-pointer" src="assets/emergency.png"
                   /></span>
-                  <span class="text-3xl">🤍</span>
+                  <span class="text-2xl">🤍</span>
                 </div>
                 <div class="mb-3">
                   <h2 class="card-title text-xl font-bold">বাংলাদেশ রেলওয়ে</h2>
@@ -336,11 +335,11 @@
             </div>
           </div>
         </section>
-        <aside id="cart-box" class="lg:col-span-3 bg-white  sm:w-full">
+        <aside id="cart-box" class="sm:col-span-3 bg-white  sm:w-full">
           <div class="flex justify-between items-center m-4 border-2 border-gray-300">
             <span class="text-[#111111]">🕒Call History</span>
             <button
-              class="btn rounded-[50px] font-bold text-[#ffffff] bg-[#00A63E] p-4 font-semibold"
+              class="btn rounded-[50px] font-bold text-[#ffffff] hover:bg-[#acbeb3] bg-[#00A63E] p-4 font-semibold"
             >
               Clear
             </button>
