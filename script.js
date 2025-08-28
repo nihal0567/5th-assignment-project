@@ -1,5 +1,50 @@
-// document.querySelectorAll('.heart').addEventListener('click', function(){
-//     const heartBtn = document.getElementById('heart-btn').innerText;
-//     const newElement = Number(heartBtn) + 1 ;
-//     document.getElementById('heart-btn').innerText = newElement;
-// })
+
+let heartBtn = document.getElementById('heart-count');
+
+let count = 0;
+let hearts = document.querySelectorAll('.heart');
+
+hearts.forEach(function(heart){
+    heart.addEventListener('click', function(){
+        count++
+        heartBtn.innerText = count;
+    })
+})
+
+
+let coins = 100;
+let coinCount = document.getElementById('coin-count');
+
+let callBtns = document.querySelectorAll('.call-btn');
+
+let historyList = document.getElementById('call-history');
+
+// const clearHistoryBtn = document.getElementById('clear-history');
+
+callBtns.forEach((btn) => {
+    btn.addEventListener('click', function(){
+        let card = btn.closest(".card-body");
+        console.log(card)
+        let serviceName = card.querySelector('.service-name').innerText;
+        
+        let serviceNumber = card.querySelector('.service-number').innerText
+        
+        if (coins < 20) {
+            alert('Not enough coins to make a call');
+            return;
+        }
+
+        alert(`Calling ${serviceName} ${serviceNumber}...`);
+        coins -= 20;
+        coinCount.innerText = coins;
+
+        let li = document.createElement('li');
+        li.innerText = `${serviceName} - ${serviceNumber}`;
+        historyList.appendChild(li);
+    })
+})
+
+document.getElementById('clear-history').addEventListener('click', function(){
+    historyList.innerHTML = '';
+    historyList.style.listStyle = 'none';
+})
