@@ -38,9 +38,12 @@ callBtns.forEach((btn) => {
         coins -= 20;
         coinCount.innerText = coins;
 
+        let now = new Date()
+        const time = now.toLocaleTimeString();
         let li = document.createElement('li');
-        li.innerText = `${serviceName} - ${serviceNumber}`;
-        historyList.appendChild(li);
+        li.innerText = `${serviceName} - ${serviceNumber} - ${time}`;
+
+        historyList.appendChild(li,  now);
     })
 })
 
