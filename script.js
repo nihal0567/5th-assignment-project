@@ -12,6 +12,7 @@ hearts.forEach(function(heart){
 })
 
 
+
 let coins = 100;
 let coinCount = document.getElementById('coin-count');
 
@@ -19,7 +20,6 @@ let callBtns = document.querySelectorAll('.call-btn');
 
 let historyList = document.getElementById('call-history');
 
-// const clearHistoryBtn = document.getElementById('clear-history');
 
 callBtns.forEach((btn) => {
     btn.addEventListener('click', function(){
@@ -47,4 +47,23 @@ callBtns.forEach((btn) => {
 document.getElementById('clear-history').addEventListener('click', function(){
     historyList.innerHTML = '';
     historyList.style.listStyle = 'none';
+})
+
+
+
+const copyBtns = document.querySelectorAll('.copy-btn');
+copyBtns.forEach(copyBtn => {
+    copyBtn.addEventListener ('click', function(){
+        const copyCount = document.getElementById('copy-count').innerText;
+        const newCount = Number(copyCount) + 1;
+        document.getElementById('copy-count').innerText = newCount;
+        const text = copyBtn.parentNode.parentNode.children[2].children[0].innerText
+        
+        navigator.clipboard.writeText(text).then(() => {
+            alert('লেখা কপি হয়েছে: '+ text)
+        })
+        .catch(err => {
+            console.error('কপি করা যায়নি: ', err)
+        })
+    })
 })
